@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Management App</title>
+
+    <link rel="stylesheet" href="ac.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Website Header -->
+        <header>
+            <div class="header-container">
+
+                <img src="images/ALLComputers Logo.png" alt="ALL Computers Logo" class="logo">
+
+            </div>
+        </header>
+
+
+        <!-- Main Content -->
+        <main>
+
+            <section class="intro">
+                <h1>Contact Management App</h1>
+
+                <p>
+                    Contact Management Solution - Solution to manage all your leads/contacts.
+                    <br>
+                    Use this application to view, add and remove contacts.
+                </p>
+            </section>
+
+
+            <!-- Add Contact Section -->
+            <section class="contact-section">
+
+                <h2>Add New Contact</h2>
+
+                <!-- Novalidate - This disables the browser's default popup 
+     messages so that JavaScript will be used provide custom messages instead.-->
+                <form id="contactForm" novalidate>
+
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <!-- Example of setting a class that will be used to define a custom message -->
+                        <span class="error-message" id="nameError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <!-- Example of setting a class that will be used to define a custom message-->
+                        <span class="error-message" id="emailError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phoneNumber">Phone Number:</label>
+                        <input type="tel" id="phoneNumber" name="phoneNumber" required>
+
+                        <!-- Example of setting a class that will be used to define a custom message-->
+                        <span class="error-message" id="phoneError"></span>
+                    </div>
+
+                    <button type="submit">Add Contact</button>
+
+                </form>
+
+
+
+            </section>
+
+            <!-- Remove Contact Section -->
+            <section class="contact-section">
+
+                <h2>Remove Contact</h2>
+
+                <form id="removeContactForm" novalidate>
+
+                    <div class="form-group">
+                        <label for="removeEmail">Contact Email:</label>
+
+                        <input type="email" id="removeEmail" name="removeEmail"
+                            placeholder="Enter the email address of the contact">
+
+                        <span class="error-message" id="removeError"></span>
+                    </div>
+
+                    <button type="submit" class="remove-button">
+                        Remove Contact
+                    </button>
+
+                </form>
+
+            </section>
+
+
+            <!-- Contact List Section -->
+            <section class="contact-section">
+
+                <h2>Contact List</h2>
+
+                <table id="contactTable">
+
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Phone Number</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="contactList">
+                        <!-- Contact data will be added here using JavaScript -->
+                    </tbody>
+
+                </table>
+
+            </section>
+
+        </main>
+
+
+        <!-- Footer -->
+        <footer id="contact">
+            <h3>Contact Us</h3>
+            <p>Telephone: +263 772 515 525</p>
+            <p>Email: kambanjet@gmail.com</p>
+            <p>Opening Hours: Monday–Sunday, 8:00 AM–10:00 PM</p>
+            <p>&copy; 2026 ALL Computers. All rights reserved.</p>
+        </footer>
+
+        <script src="contactscript.js"></script>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+{
+    "contacts": [
+        {
+            "name": "Elias Edzo",
+            "email": "alias28@gmail.com",
+            "phoneNumber": "+263772519826"
+        },
+        {
+            "name": "Gregory Ndaku",
+            "email": "ndaku134@gmail.com",
+            "phoneNumber": "+263771882916"
+        },
+        {
+            "name": "Mazwi Mukanya",
+            "email": "makwilamutengo@gmail.com",
+            "phoneNumber": "+263772534221"
+        }
+    ]
+}
